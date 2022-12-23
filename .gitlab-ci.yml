@@ -1,0 +1,10 @@
+---
+image: chandraazmeera/ubuntu_gitlab1
+
+stages: 
+  - download_build
+
+containuous downloads and build:
+  - stage: download_build
+  - script: git clone https://gitlab.com/azmeeranaveen7/maven.git
+  - script: mvn package
